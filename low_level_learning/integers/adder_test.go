@@ -1,7 +1,9 @@
 package integers
 
-import "testing"
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 // Add takes two integers and returns the sum of them
 func Add(x,y int) int {
@@ -20,4 +22,5 @@ func TestAdder(t *testing.T) {
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
+	// Output: 6
 }
